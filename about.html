@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About • African American Historical Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="logo" src="logo.png" alt="Logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="archive.html">Archive</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>About</h1>
+      <p>
+        The African American Historical Archive is an independent educational preservation project.
+        It is built to organize and present primary sources with care, accuracy, and clear citations.
+      </p>
+      <p>
+        This archive is developed in phases, beginning with slavery through Reconstruction (1619–1877).
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year"></span> African American Historical Archive.</p></div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
