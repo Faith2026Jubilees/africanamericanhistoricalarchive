@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mission • African American Historical Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="logo" src="logo.png" alt="Logo"></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html" aria-current="page">Mission</a>
+        <a href="archive.html">Archive</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Mission</h1>
+      <p>
+        This independent digital archive preserves and presents the documented history, primary sources,
+        and cultural legacy of African Americans, including formerly enslaved Americans and their descendants
+        when appropriate.
+      </p>
+      <p>
+        Focused initially on slavery through Reconstruction (1619–1877), this project exists to ensure that
+        historical memory remains visible, intact, and accessible to future generations.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© <span id="year"></span> African American Historical Archive.</p></div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
