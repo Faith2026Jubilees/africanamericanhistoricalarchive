@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>African American Historical Archive</title>
+
+  <!-- Fonts (free Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="logo" src="logo.png" alt="African American Historical Archive logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="mission.html">Mission</a>
+        <a href="archive.html">Archive</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>African American Historical Archive</h1>
+      <p>
+        This independent digital archive preserves and presents the documented history, primary sources,
+        and cultural legacy of African Americans, including formerly enslaved Americans and their descendants
+        when appropriate.
+      </p>
+      <p>
+        Focused initially on slavery through Reconstruction (1619–1877), this project exists to ensure that
+        historical memory remains visible, intact, and accessible to future generations.
+      </p>
+
+      <div class="cta-row">
+        <a class="button" href="archive.html">Explore the Archive</a>
+        <a class="button secondary" href="mission.html">Read the Mission</a>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h2>Phase One</h2>
+        <p>Slavery through Reconstruction (1619–1877)</p>
+      </article>
+      <article class="card">
+        <h2>Primary Sources</h2>
+        <p>Curated public-domain documents, records, and narratives with clear citations.</p>
+      </article>
+      <article class="card">
+        <h2>Built to Last</h2>
+        <p>Simple, durable publishing designed for long-term preservation and access.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> African American Historical Archive. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
