@@ -196,20 +196,21 @@ padding-right: 20px;
   line-height: 1.7;
 }
 
-.document-header {
-  border-bottom: 1px solid #ccc;
+.document-header{
+  border-bottom: 1px solid var(--border);
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
 
-.document-meta {
-  font-size: 0.9rem;
-  color: #666;
+.document-meta{
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
-.document-image img {
+.document-image img{
   width: 100%;
-  filter: grayscale(60%) contrast(95%) brightness(95%);
+  border-radius: 8px;              /* optional: matches featured image rounding */
+  filter: grayscale(35%) saturate(90%) contrast(95%) brightness(97%);
   margin-bottom: 30px;
 }
 
