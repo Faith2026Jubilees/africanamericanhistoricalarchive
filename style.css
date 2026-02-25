@@ -33,68 +33,6 @@ body{
 padding-right: 20px;
 }
 
-.header-inner{
-  display:flex;
-  align-items: flex-end;
-  justify-content:space-between;
-  gap: 16px;
-  padding: 2px 24px;   /* was 6px 24px */
-}
-
-.logo{
-  height: 76px;
-  width: auto;
-  display:block;
-}
-
-.nav{
-  display:flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  justify-content:flex-end;
-}
-
-.nav a{
-  color: var(--ink);
-  text-decoration:none;
-  font-size: 14px;
-  padding: 4px 10px;
-  border-radius: 10px;
-}
-
-.nav a:hover{
-  background: rgba(31,58,95,.06);
-}
-
-.hero{
-  padding: 36px 0 18px;
-}
-/* ===== HERO IMAGE BLUE OVERLAY ===== */
-
-.hero{
-  position: relative;
-}
-
-/* If your hero image is an <img> inside .hero */
-.hero img{
-  display: block;
-  width: 100%;
-}
-
-.hero::before{
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(31, 58, 95, 0.75); /* #1F3A5F overlay */
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* Keep hero text/content above overlay */
-.hero > *{
-  position: relative;
-  z-index: 2;
-}
 .hero h1{
   margin: 0 0 10px;
   font-family: "Cormorant Garamond", serif;
