@@ -69,7 +69,32 @@ padding-right: 20px;
 .hero{
   padding: 36px 0 18px;
 }
+/* ===== HERO IMAGE BLUE OVERLAY ===== */
 
+.hero{
+  position: relative;
+}
+
+/* If your hero image is an <img> inside .hero */
+.hero img{
+  display: block;
+  width: 100%;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(31, 58, 95, 0.75); /* #1F3A5F overlay */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Keep hero text/content above overlay */
+.hero > *{
+  position: relative;
+  z-index: 2;
+}
 .hero h1{
   margin: 0 0 10px;
   font-family: "Cormorant Garamond", serif;
